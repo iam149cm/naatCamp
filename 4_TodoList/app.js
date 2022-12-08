@@ -68,7 +68,7 @@ Item.find ({}, function(err, foundItems) {
 
 
   } else {
-      res.render("list", {listTitle: "Today", newListItems: foundItems});
+      res.render("index", {listTitle: "Today", newListItems: foundItems});
   }
 
 });
@@ -94,7 +94,7 @@ app.get("/:customListName", function(req,res) {
 
      } else {
        // show an existing list
-       res.render("list",  {listTitle: foundList.name, newListItems: foundList.items });
+       res.render("index",  {listTitle: foundList.name, newListItems: foundList.items });
      }
    }
   });
