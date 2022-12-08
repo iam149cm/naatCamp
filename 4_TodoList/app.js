@@ -9,8 +9,16 @@ const _ = require("lodash");
 
 const app = express();
 
-app.set('view engine', 'ejs');
-app.set('views', './views');
+// app.set('view engine', 'ejs');
+// app.set('views', './views');
+
+//app.js
+
+ // view engine setup
+ app.set('views', './views');
+ app.engine('html', require('ejs').renderFile);
+ app.set('view engine', 'html');
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(express.static("public"));
