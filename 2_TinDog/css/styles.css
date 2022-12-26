@@ -141,7 +141,9 @@ background-color: #ef8172; /* override*/
     text-align: center;
   }
   .title-img {
-    position: static;
-    transform: rotate(0);
+    top : 30%;
+    right : 10%
+    /* position: static; */
+    /* transform: rotate(0); */
   }
 }
