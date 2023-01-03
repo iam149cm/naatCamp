@@ -32,7 +32,7 @@ function nextSequence(){
   let randomNumber = Math.floor(Math.random() * 4);
   let randomChosenColour = buttomColours[randomNumber];
   gamePattern.push(randomChosenColour);
-  console.log("randomChosenColour :: " + randomChosenColour);
+
   $('#'+randomChosenColour).fadeOut(100).fadeIn(100);
   playSound(randomChosenColour);
 
@@ -42,7 +42,6 @@ function handler(){
   $('.btn').click(function() {
     let userChosenColour = $(this).attr("id");
     userClickedPattern.push(userChosenColour);
-    console.log("userClickedPattern ::: ", userClickedPattern);
 
     playSound(userChosenColour);
     animatePress(userChosenColour);
@@ -64,7 +63,6 @@ setTimeout(() => {
 function checkAnswer(currentLevel){
   let userLastIndex = userClickedPattern[currentLevel];
   let gameLastIndex = gamePattern[currentLevel];
-  console.log("userLastIndex :: " , userLastIndex , " / gameLastIndex :: ", gameLastIndex )
 
   if (userLastIndex === gameLastIndex ) {
     console.log("success");
@@ -89,9 +87,7 @@ function checkAnswer(currentLevel){
 
 }, 500)
 
-
-    $('#level-title').html('Game Over!<p>Press Any Key to Restart 😅');
-
+    $('#level-title').html('Game Over! Press Any Key to Restart 😅').css("font-size", "2rem");
     $(document).keydown(() => {
       startOver();
     })
