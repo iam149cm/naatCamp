@@ -94,39 +94,39 @@ nav {
           <svg class="bi pe-none" width="40" height="32">
             <use xlink:href="#bootstrap" />
           </svg>
-          <span class="visually-hidden">Home</span>
+          <!-- <span class="visually-hidden">Home</span> -->
         </a>
 
         <ul class="nav nav-pills nav-flush flex-column mb-auto text-center">
           <li class="nav-item">
-            <a href="#" id="css" class="nav-link active py-3 border-bottom rounded-0" title="CSS" data-bs-toggle="tooltip" data-bs-placement="right">
+            <a href="#" id="css" class="nav-link py-3 border-bottom rounded-0" title="CSS" data-bs-toggle="tooltip" data-bs-placement="right">
               <svg class="bi pe-none" width="24" height="24" role="img" aria-label="CSS">
                 <use xlink:href="#logo_css" />
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" id="js" class="nav-link py-3 border-bottom rounded-0" title="JavaScript" data-bs-toggle="tooltip" data-bs-placement="right">
               <svg class="bi pe-none" width="24" height="24" role="img" aria-label="JavaScript">
                 <use xlink:href="#logo_js" />
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" id="jquery" class="nav-link py-3 border-bottom rounded-0" title="JQuery" data-bs-toggle="tooltip" data-bs-placement="right">
               <svg class="bi pe-none" width="24" height="24" role="img" aria-label="JQuery">
                 <use xlink:href="#logo_jquery" />
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" id="react" class="nav-link py-3 border-bottom rounded-0" title="React" data-bs-toggle="tooltip" data-bs-placement="right">
               <svg class="bi pe-none" width="24" height="24" role="img" aria-label="React">
                 <use xlink:href="#logo_react" />
               </svg>
             </a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" id="threejs" class="nav-link py-3 border-bottom rounded-0" title="ThreeJS" data-bs-toggle="tooltip" data-bs-placement="right">
               <svg class="bi pe-none" width="24" height="24" role="img" aria-label="ThreeJS">
                 <use xlink:href="#logo_threejs" />
@@ -168,6 +168,8 @@ nav {
   $('nav').on("click", (event) => {
     const targetId = event.target.id;
     console.log(targetId, ' 👉 ' ,link[targetId]);
+    $('a').removeClass('active');
+    $('#'+targetId).addClass('active');
 
     $('embed').attr('src',link[targetId]);
 
