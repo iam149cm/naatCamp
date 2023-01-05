@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/static/js/main.818ad219.chunk.js",
-    "main.js.map": "/static/js/main.818ad219.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.aa743321.js",
-    "runtime-main.js.map": "/static/js/runtime-main.aa743321.js.map",
-    "static/js/2.33a29831.chunk.js": "/static/js/2.33a29831.chunk.js",
-    "static/js/2.33a29831.chunk.js.map": "/static/js/2.33a29831.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.cc943d98f670a3e1e8b1edc92781ad6c.js": "/precache-manifest.cc943d98f670a3e1e8b1edc92781ad6c.js",
-    "service-worker.js": "/service-worker.js"
+    "main.js": "/naatCamp/6_Keeper-App/static/js/main.e824ccc6.chunk.js",
+    "main.js.map": "/naatCamp/6_Keeper-App/static/js/main.e824ccc6.chunk.js.map",
+    "runtime-main.js": "/naatCamp/6_Keeper-App/static/js/runtime-main.5bf23bfe.js",
+    "runtime-main.js.map": "/naatCamp/6_Keeper-App/static/js/runtime-main.5bf23bfe.js.map",
+    "static/js/2.cdcea76b.chunk.js": "/naatCamp/6_Keeper-App/static/js/2.cdcea76b.chunk.js",
+    "static/js/2.cdcea76b.chunk.js.map": "/naatCamp/6_Keeper-App/static/js/2.cdcea76b.chunk.js.map",
+    "index.html": "/naatCamp/6_Keeper-App/index.html",
+    "precache-manifest.1a8e97765614758a951427658f4c48bc.js": "/naatCamp/6_Keeper-App/precache-manifest.1a8e97765614758a951427658f4c48bc.js",
+    "service-worker.js": "/naatCamp/6_Keeper-App/service-worker.js"
   },
   "entrypoints": [
-    "static/js/runtime-main.aa743321.js",
-    "static/js/2.33a29831.chunk.js",
-    "static/js/main.818ad219.chunk.js"
+    "static/js/runtime-main.5bf23bfe.js",
+    "static/js/2.cdcea76b.chunk.js",
+    "static/js/main.e824ccc6.chunk.js"
   ]
 }

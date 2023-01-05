@@ -1,4 +1,5 @@
 {
+  "homepage": "https://iam149cm.github.io/naatCamp/6_Keeper-App",
   "name": "using-pre-built-react-components",
   "version": "1.0.0",
   "description": "",
@@ -9,6 +10,7 @@
     "@emotion/styled": "^11.10.5",
     "@mui/icons-material": "^5.11.0",
     "@mui/material": "^5.11.2",
+    "gh-pages": "^4.0.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-scripts": "3.2.0"
@@ -20,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
   },
   "browserslist": [
     ">0.2%",
